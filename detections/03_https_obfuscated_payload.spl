@@ -1,0 +1,4 @@
+index=main source="*/apt29_day2.json"
+| search ParentImage="*wmiprvse.exe" OR ParentImage="*WmiPrvSE.exe" OR ParentImage="*winrm.exe" OR ParentImage="*winrs.exe"
+| table _time Hostname Account_Name Image ParentImage CommandLine
+| sort _time
