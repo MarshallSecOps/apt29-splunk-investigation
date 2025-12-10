@@ -1,0 +1,7 @@
+index=main source="/opt/splunk/var/log/apt29_day2.json"
+| where like(CommandLine, "%-enc%")
+   OR like(CommandLine, "%EncodedCommand%")
+   OR like(CommandLine, "%-exec bypass%")
+   OR like(CommandLine, "%windowstyle hidden%")
+| table _time Hostname Account_Name Image ParentImage CommandLine
+| sort _time
