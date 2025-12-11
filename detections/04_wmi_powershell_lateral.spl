@@ -1,0 +1,4 @@
+index=main source="*apt29_day2.json"
+Image="*\\powershell.exe" ParentImage="*\\WmiPrvSE.exe"
+| table _time Hostname User Image ParentImage CommandLine ProcessId
+| sort _time
