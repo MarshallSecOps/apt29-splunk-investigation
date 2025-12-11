@@ -1,0 +1,12 @@
+index=main source="*/apt29_day2.json"
+Image="*WmiPrvSE.exe"
+AND (
+    CommandLine="*powershell*"
+    OR ParentImage="*powershell.exe"
+    OR CommandLine="*cmd.exe*"
+    OR CommandLine="*rundll32.exe*"
+    OR CommandLine="*regsvr32.exe*"
+    OR CommandLine="*\\root\\subscription*"
+)
+| table _time Hostname Account_Name Image ParentImage CommandLine
+| sort _time
