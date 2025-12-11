@@ -1,0 +1,6 @@
+index=main source="*apt29_day2.json"
+| search CommandLine="*wevtutil*" 
+        OR CommandLine="*Clear-EventLog*" 
+        OR CommandLine="*clearev*"
+| table _time Hostname User Image ParentImage CommandLine ProcessId
+| sort _time
