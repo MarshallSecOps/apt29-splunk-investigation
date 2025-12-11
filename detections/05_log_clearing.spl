@@ -1,3 +1,5 @@
+# Log Clearing Hunt - Only benign Azure Guest Agent log maintenance observed.
+
 index=main source="*apt29_day2.json"
 | search CommandLine="*wevtutil*" 
         OR CommandLine="*Clear-EventLog*" 
