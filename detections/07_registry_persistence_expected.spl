@@ -1,0 +1,9 @@
+index=main source="*apt29_day2.json"
+(
+    CommandLine="*\\Run\\*" 
+    OR TargetObject="*\\Run\\*" 
+    OR TargetObject="*\\RunOnce\\*"
+    OR CommandLine="*reg add*"
+)
+| table _time Hostname Account_Name Image CommandLine TargetObject ParentImage
+| sort _time
