@@ -1,7 +1,0 @@
-index=main source="*apt29_day2.json"
-(Image="*wsmprovhost.exe" 
- OR ParentImage="*wsmprovhost.exe" 
- OR Image="*winrm.exe" 
- OR Image="*wsman.exe")
-| table _time Hostname User Image ParentImage CommandLine
-| sort _time

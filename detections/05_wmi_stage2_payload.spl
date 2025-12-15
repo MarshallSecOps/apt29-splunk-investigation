@@ -1,0 +1,2 @@
+index=main source="*apt29*.json" CommandLine="*sekurlsa::logonpasswords*"
+| table _time Hostname User Image CommandLine
