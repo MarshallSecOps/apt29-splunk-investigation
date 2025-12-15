@@ -1,5 +1,2 @@
-index=main source="/opt/splunk/var/log/apt29_day2.json"
-| search CommandLine="*powershell*" OR CommandLine="*EncodedCommand*"
-| table _time Hostname Account_Name Image CommandLine ParentImage
-| sort _time
-
+index=main source="*apt29*.json" CommandLine="*192.168.0.4*"
+| table _time Hostname User Image CommandLine
