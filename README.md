@@ -5,7 +5,7 @@ It includes detection queries, decoded payloads, an attack timeline, MITRE ATT&C
 
 ---
 
-## 🧪 Lab Overview
+## Lab Overview
 
 - **SIEM:** Splunk Enterprise (Docker on macOS, Apple Silicon)
 - **Dataset:** OTRF Security Datasets — `windows/apt29` (Day 1 and Day 2)
@@ -14,7 +14,7 @@ It includes detection queries, decoded payloads, an attack timeline, MITRE ATT&C
 
 ---
 
-## 📂 Contents
+## Contents
 
 - `detections/` — SPL queries used to detect malicious activity  
 - `decoded_payloads/` — Decoded PowerShell payloads recovered from EncodedCommand  
@@ -25,7 +25,7 @@ It includes detection queries, decoded payloads, an attack timeline, MITRE ATT&C
 
 ---
 
-## 🚨 Key Detections
+## Key Detections
 
 ### 1. Obfuscated PowerShell Execution
 Detects PowerShell launched with:
@@ -44,7 +44,7 @@ Flags suspicious LSASS access by non-system accounts across multiple hosts.
 
 ---
 
-## ✨ Highlight: Decoded APT29 Credential Theft Script
+## Highlight: Decoded APT29 Credential Theft Script
 
 A single EncodedCommand payload decodes to a script that:
 
@@ -59,21 +59,21 @@ A single EncodedCommand payload decodes to a script that:
 
 ---
 
-## 🗺️ MITRE ATT&CK Mapping
+## MITRE ATT&CK Mapping
 
 Full mapping available in:  
 [`mitre_mapping/mitre_mapping.md`](mitre_mapping/mitre_mapping.md)
 
 ---
 
-## 📝 Report
+## Report
 
 Full incident report:  
 [`report/apt29_incident_report.md`](report/apt29_incident_report.md)
 
 ---
 
-## 🧠 Learnings & Reflections
+## Learnings & Reflections
 
 This investigation reinforced key DFIR concepts:
 
@@ -85,7 +85,7 @@ This investigation reinforced key DFIR concepts:
 
 ---
 
-## 🛠️ Skills Demonstrated
+## Skills Demonstrated
 
 - Threat hunting in Splunk (large dataset: ~800k events)
 - Detection of obfuscated PowerShell activity
@@ -99,7 +99,7 @@ This investigation reinforced key DFIR concepts:
 
 ---
 
-## 🚀 Next Steps / Enhancements
+## Next Steps / Enhancements
 
 Future improvements include:
 
@@ -111,7 +111,7 @@ Future improvements include:
 
 ---
 
-## ✔️ Summary
+## Summary
 
 This project demonstrates practical SOC and DFIR capabilities — from decoding attacker payloads and analysing LSASS credential theft, to mapping behaviours to MITRE ATT&CK and producing a professional security investigation report.
 
