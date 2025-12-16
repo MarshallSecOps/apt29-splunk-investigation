@@ -40,7 +40,7 @@ Detects PowerShell launched with:
 ### 2. LSASS Credential Dumping
 Flags suspicious LSASS access by non-system accounts across multiple hosts.
 
-**File:** [`detections/02_lsass_credential_dumping.spl`](detections/02_lsass_credential_dumping.spl)
+**File:** [`detections/03_lsass_credential_dumping.spl`](detections/03_lsass_credential_dumping.spl)
 
 ---
 
