@@ -257,8 +257,8 @@ Detects lateral movement via WinRM and WMI using `wsmprovhost.exe`.
 Detects persistence via local account creation executed remotely via WinRM/WMI context.
 
     index=main source="*apt29_day2.json"
-    ParentImage="*wsmprovhost.exe" EventID=1 Image="*net.exe"
-    (CommandLine="* user *" OR CommandLine="* localgroup *")
+    ParentImage="*wsmprovhost.exe"
+    (EventID=1)
     | table _time Hostname User ParentImage Image CommandLine
     | sort _time
 
