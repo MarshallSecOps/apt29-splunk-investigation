@@ -67,13 +67,13 @@ Detects remote execution via WinRM and WMI using `wsmprovhost.exe` as the parent
 ### 4. Persistence via Remote Local Account Creation
 
 Detects local account creation executed remotely via WinRM/WMI context.  
-This activity represents confirmed malicious persistence, not benign system behavior.
+This activity represents confirmed malicious persistence rather than benign system behaviour.
 
 Observed command example:
 - `net.exe user /add toby pamBeesly<3`
 
-**Detection:**  
-[detections/04_winrm_lateral_movement.spl](detections/04_winrm_lateral_movement.spl)
+Detection:
+- [detections/05b_splunk_winrm_child_process_execution.spl](detections/05b_splunk_winrm_child_process_execution.spl)
 
 ---
 
