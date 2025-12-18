@@ -162,7 +162,7 @@ The staged executable (`m.exe`) was executed remotely on the NEWYORK host under 
 - Credential access activity inferred
 
 **Evidence:**
-- Splunk process creation logs
+- `Screenshots/05b_splunk_winrm_child_process_execution.png`
 
 **MITRE ATT&CK:**
 - T1003.001 – LSASS Memory
