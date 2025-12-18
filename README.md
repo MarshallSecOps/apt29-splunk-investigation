@@ -24,7 +24,7 @@ It includes detection queries, decoded PowerShell payloads, an evidence-backed a
 - [decoded_payloads/](decoded_payloads/) — Decoded PowerShell payloads recovered from EncodedCommand
 - [detections/](detections/) — SPL queries used to detect malicious activity  
 - [mitre_mapping/](mitre_mapping/) — Mapping of observed activity to MITRE ATT&CK
-- [report/](report/) — Full written incident report (Markdown)
+- [report/](report/) — Full written incident report
 - [timeline/](timeline/) — Evidence-based attack timeline  
   
 ---
