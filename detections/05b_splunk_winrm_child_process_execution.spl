@@ -1,0 +1,5 @@
+index=main source="*apt29_day2.json"
+ParentImage="*wsmprovhost.exe"
+(EventID=1)
+| table _time Hostname User ParentImage Image CommandLine
+| sort _time
