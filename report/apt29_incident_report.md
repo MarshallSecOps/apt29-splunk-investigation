@@ -185,7 +185,7 @@ This activity represents a confirmed persistence mechanism and contradicts earli
 - Parent process associated with WinRM
 
 **Evidence:**
-- Splunk process creation logs
+- `Screenshots/05b_splunk_winrm_child_process_execution.png`
 
 **MITRE ATT&CK:**
 - T1136.001 – Create Account: Local Account
