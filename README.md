@@ -1,4 +1,4 @@
-# APT29 Splunk Investigation
+# APT29 DFIR Investigation
 
 This repository documents an end-to-end investigation of the APT29 evaluation dataset using Splunk.  
 It includes detection queries, decoded PowerShell payloads, an evidence-backed attack timeline, MITRE ATT&CK mapping, and a full DFIR-style incident report.
